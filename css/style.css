@@ -1,6 +1,4 @@
 
-
-
 /* ESTILOS GENERALES*/
 
 @font-face {
@@ -13,17 +11,62 @@
     src: url(../fonts/neutra.otf);
 }
 
+@font-face {
+    font-family: nexa;
+    src: url(../fonts/Nexa Bold_1.otf);
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
 
 .contenedor{
 	padding: 4em 0em;
 }
 
+/*Nav*/
+nav{
+	padding: 1em 0;
+}
+
+nav ul{
+	margin-left: -2em;
+	padding-top: 0.5em;
+}
+
+nav ul li{
+	display: inline-block;
+	margin-right: 2em;
+	list-style: none;
+}
+
+nav ul li a{
+	font-family: 'nexa';
+	font-weight: 600;
+	font-size: 0.9em;
+}
+
+nav ul li a:hover{
+	color: #D93856;
+	text-decoration: none;
+}
+
+nav ul li ul li{
+	margin-right: 1em;
+}
+
+.activo{
+	color: #D93856;
+}
+
+/*Header*/
 .header{
 	background-image: url('../img/background__header.jpg'); 
 	background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center top;
-    padding-bottom:28%;
+    padding-bottom:21%;
 }
 
 .header__contenido{
@@ -33,7 +76,7 @@
 
 .header__contenido img{
 	height: auto;
-	width: 20%;
+	width: 30%;
 }
 
 .header__contenido__parrafo{
@@ -42,7 +85,7 @@
     background-size: contain;
     background-position: center top;
     padding: 0.5em 0;
-    margin-top: 3em;	
+    margin-top: 3em;
 }
 
 .header__contenido__parrafo p{
@@ -64,4 +107,101 @@
 .header__contenido__parrafo p span{
 	font-family: 'bernier'!important;
 	font-size: 1.4em;
+}
+
+/*Fincas*/
+.fincas{
+	background-image: url('../img/background__fincas.jpg');
+	background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    padding-bottom: 3em;
+}
+
+.fincas__nuestras__item{
+	background-size: 100% auto;
+	color:#fff;
+	font-family: 'neutra';
+	text-align: left;
+	padding-top: 1.5em;
+	padding-left: 1.5em;
+	padding-bottom: 7.5em;
+	-webkit-transition: all linear 0.5s;
+	-moz-transition: all linear 0.5s;
+	-ms-transition: all linear 0.5s;
+	-o-transition: all linear 0.5s;
+	transition: all linear 0.5s;
+}
+
+.fincas__nuestras__item h4{
+	font-size: 2.5em;
+	padding-right: 2em;
+}
+
+.fincas__nuestras__item p{
+	font-size: 1.5em;
+	margin-bottom: 3.15em;
+}
+
+.fincas__nuestras__item--tipo1{
+	background-image: linear-gradient(rgba(166, 124, 82, 0.6) 100%, #000), url('../img/portagro.jpg');
+	-webkit-filter: brightness(.7) contrast(2);
+}
+
+.fincas__nuestras__item--tipo1:hover{
+    background-image: linear-gradient(rgba(166, 124, 82, 0.3) 100%, #000), url('../img/portagro.jpg');;
+	filter:none;
+}
+
+.fincas__nuestras__item--tipo2{
+	background-image: linear-gradient(rgba(90, 122, 64, 0.6) 100%, #000), url('../img/f&f.jpg');
+	-webkit-filter: brightness(.7) contrast(2);
+}
+
+.fincas__nuestras__item--tipo2:hover{
+    background-image: linear-gradient(rgba(90, 122, 64, 0.3) 100%, #000), url('../img/f&f.jpg');;
+	filter:none;
+}
+
+.fincas__nuestras__item--tipo3{
+	background-image: linear-gradient(rgba(166, 124, 82, 0.6) 100%, #000), url('../img/gonzales.jpg');
+	-webkit-filter: brightness(.7) contrast(2);
+}
+
+.fincas__nuestras__item--tipo3:hover{
+    background-image: linear-gradient(rgba(166, 124, 82, 0.3) 100%, #000), url('../img/gonzales.jpg');;
+	filter:none;
+}
+
+.fincas__nuestras__item--tipo4{
+	background-image: linear-gradient(rgba(90, 122, 64, 0.6) 100%, #000), url('../img/portagro.jpg');
+	-webkit-filter: brightness(.7) contrast(1.5);
+}
+
+.fincas__nuestras__item--tipo4:hover{
+    background-image: linear-gradient(rgba(90, 122, 64, 0.3) 100%, #000), url('../img/portagro.jpg');;
+	filter:none;
+}
+
+.fincas__nuestras__item--tipo5{
+	background-image: linear-gradient(rgba(166, 124, 82, 0.6) 100%, #000), url('../img/f&f.jpg');
+	-webkit-filter: brightness(.7) contrast(1.5);
+}
+
+.fincas__nuestras__item--tipo5:hover{
+    background-image: linear-gradient(rgba(166, 124, 82, 0.3) 100%, #000), url('../img/f&f.jpg');;
+	filter:none;
+}
+
+.nuestras{
+	background-image: url('../img/background__nuestras.jpg');
+	padding: 7em 0;
+	text-align: center;
+}
+
+.nuestras h3{
+	color:#fff;
+	font-family: bernier;
+	font-size: 3em;
+	padding: 0 2em;
 }
