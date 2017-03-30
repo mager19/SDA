@@ -203,7 +203,7 @@
 	</div>
 </section>
 <!-- /Recetas -->
-
+    
 <script src="js/jquery.js"></script>
    <script>
         var tag = document.createElement('script');
@@ -218,7 +218,12 @@
                 height: '1280',
                 width: '720',
                 videoId: 'INGJ8u1lDZg',
-                
+                playerVars: { 
+		        	'autoplay': 0,
+		        	'controls': 0, 
+		        	'rel' : 0,
+		        	'showinfo' : 0
+				  },
                 events: {
                     'onReady': onPlayerReady,
                 }
@@ -231,9 +236,7 @@
             });
         }
 
-        var $ = jQuery;
-
-        $(document).ready(function() {
+        jQuery(document).ready(function() {
             $('#player').hide();
             $('#play_vid').click(function() {
                 $('#player').show();
@@ -241,8 +244,6 @@
             });
         });
     </script>
-
-    
 
 <script src="js/bootstrap.js"></script>
 </body>
