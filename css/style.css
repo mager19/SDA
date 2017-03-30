@@ -115,7 +115,7 @@ nav ul li ul li{
 	background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center top;
-    padding-bottom: 3em;
+    padding-bottom: 15em;
 }
 
 .fincas__nuestras__item{
@@ -149,7 +149,7 @@ nav ul li ul li{
 }
 
 .fincas__nuestras__item--tipo1:hover{
-    background-image: linear-gradient(rgba(166, 124, 82, 0.3) 100%, #000), url('../img/portagro.jpg');;
+    background-image: linear-gradient(rgba(166, 124, 82, 0.3) 100%, #000), url('../img/portagro.jpg');
 	filter:none;
 }
 
@@ -204,4 +204,102 @@ nav ul li ul li{
 	font-family: bernier;
 	font-size: 3em;
 	padding: 0 2em;
+}
+
+/*Video*/
+
+.video iframe{
+	cursor: pointer;
+	width: 100%;
+    height: 1280px;
+}
+
+
+/*Recetas*/
+
+.recetas{
+	background-image: url('../img/background__recetas.jpg');
+	background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    padding: 7em 0;
+}
+
+.recetas h3{
+	background-image: url('../img/backrecetas.png');
+	background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+	color:#8B8053;
+	font-family: bernier;
+	font-size: 5em;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+.recetas__item{
+	background-color: rgba(139,128,83,0.7);
+	color:#fff;
+	cursor: pointer;
+	font-family: 'neutra';
+	margin-bottom: 2em;
+	-webkit-transition: all linear 0.5s;
+	-moz-transition: all linear 0.5s;
+	-o-transition: all linear 0.5s;
+	transition: all linear 0.5s;
+}
+
+.recetas__item__imagen{
+	overflow:hidden;
+}
+
+.recetas__item__info{
+	-webkit-transition: all linear 0.5s;
+	-moz-transition: all linear 0.5s;
+	-o-transition: all linear 0.5s;
+	transition: all linear 0.5s;
+}
+
+.recetas__item__imagen img{
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all linear 0.4s;
+	-moz-transition: all linear 0.4s;
+	-o-transition: all linear 0.4s;
+	transition: all linear 0.4s;
+}
+
+.recetas__item h4{
+	font-size: 2.5em;
+	margin-top: 1em;
+}
+
+.recetas__item p{
+	font-size: 1.8em;
+	padding-right: 3em;
+
+}
+
+.recetas__item:nth-child(2) .recetas__item__info{
+	padding-left: 2.5em;
+}
+
+.recetas__item:hover{
+	background-color: rgba(90, 122, 64, 0.9);
+}
+
+.recetas__item:hover .recetas__item__imagen img{
+	opacity: 0.4;	
+    -moz-transform: scale(1.1) rotate(5deg);
+    transform: scale(1.1) rotate(5deg);
+    -webkit-transform:scale(1.1) rotate(5deg);
+	-ms-transform:scale(1.1) rotate(5deg);
+}
+
+.recetas__item:hover .recetas__item__info{
+	padding-left: 0.5em;
+}
+
+.recetas__item:nth-child(2):hover .recetas__item__info{
+	padding-left: 3.5em;
 }

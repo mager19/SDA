@@ -135,11 +135,120 @@
 </section>
 <!-- /Fincas -->
 
-<section>
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet facere aliquam soluta voluptatibus excepturi iste quae. Est nisi porro similique quod placeat ipsum, quae delectus, ea molestias! Eveniet eligendi repudiandae veniam velit maiores illum suscipit incidunt rem laboriosam, at ipsa facilis quasi exercitationem, quae eos temporibus? Debitis necessitatibus quaerat quas voluptate molestiae eligendi rerum itaque illo porro temporibus ipsam, officiis obcaecati, iure assumenda autem corrupti dicta, quos magnam, reiciendis provident. Fuga, eum, consectetur! Quam eaque ab quaerat, quidem necessitatibus animi. Non officia impedit vero consequatur dolor sed, sequi ducimus. Voluptates quo laboriosam nostrum beatae reprehenderit, asperiores fuga ex animi error accusantium, dicta laudantium esse eaque illum hic mollitia voluptatibus placeat dignissimos cumque sequi officiis. Dignissimos exercitationem non, expedita eius dolore maiores repudiandae similique, eveniet cupiditate debitis quam quibusdam pariatur iusto obcaecati? Vero blanditiis nemo deleniti nam temporibus delectus ad. Nostrum quis magni, ipsam ad similique culpa eum aut vitae explicabo obcaecati minima qui quos, nobis beatae excepturi laborum doloribus sunt doloremque laboriosam fugiat dolore. Commodi excepturi, at officiis quibusdam ullam fugiat asperiores corporis, nostrum expedita ea officia libero tempora! Ut porro placeat delectus expedita quibusdam atque quo unde, non nam consequatur odio, optio velit! Accusamus quos cum optio adipisci nemo.
+<!-- Video -->
+<section class="video">	
+	<div id="player"></div>
+	<img id="play_vid" src="img/background__video.jpg" />
 </section>
+<!-- /Video -->
+
+<!-- Recetas -->
+<section class="recetas">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h3>RECETAS</h3>
+			</div>	
+
+			<div class="col-md-10 col-md-offset-1">
+				<div class="recetas__item">
+					<div class="row">
+						<div class="col-md-5">
+							<div class="recetas__item__imagen">
+								<img src="img/receta1.jpg" alt="receta1">
+							</div>
+						</div>
+						<div class="col-md-7">
+							<div class="recetas__item__info">
+								<h4>SOFRITO CRIOLLO</h4>
+								<p>Nada como la sazón criolla de un sofrito hecho en casa con ingredientes de aqui.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="recetas__item">
+					<div class="row">
+						<div class="col-md-7">
+							<div class="recetas__item__info">
+								<h4>SOPA DE CEBOLLA</h4>
+								<p>¡Se nos hace la boca agua pensando en el sabor de esta sopa preparada con las cebollas de Guánica!.</p>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="recetas__item__imagen">
+								<img src="img/receta2.jpg" alt="receta2">
+							</div>
+						</div>						
+					</div>
+				</div>
+
+				<div class="recetas__item">
+					<div class="row">
+						<div class="col-md-5">
+							<div class="recetas__item__imagen">
+								<img src="img/receta3.jpg" alt="receta2">
+							</div>
+						</div>						
+						<div class="col-md-7">
+							<div class="recetas__item__info">
+								<h4>TACO SALAD</h4>
+								<p>No es lo mismo una ‘taco salad’ comprada, que hacerla en tu casa con mucha lechugita Romana picadita del pueblo de Ciales. </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /Recetas -->
 
 
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script>
+        var tag = document.createElement('script');
+
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '1280',
+                width: '720',
+                videoId: 'INGJ8u1lDZg',
+                playerVars: { 
+		        	'autoplay': 0,
+		        	'controls': 0, 
+		        	'rel' : 0,
+		        	'showinfo' : 0
+				  },
+                events: {
+                    'onReady': onPlayerReady,
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            $('#play_vid').click(function() {
+                event.target.playVideo();
+            });
+        }
+
+        $(document).ready(function() {
+            $('#player').hide();
+            $('#play_vid').click(function() {
+                $('#player').show();
+                $('#play_vid').hide();
+            });
+        });
+    </script>
+
+    
+
+<!-- https://www.youtube.com/watch?v=INGJ8u1lDZg -->
 </body>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="js/bootstrap.js"></script>
