@@ -62,11 +62,10 @@ nav ul li ul li{
 
 /*Header*/
 .header{
-	background-image: url('../img/background__header.jpg'); 
-	background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center top;
-    padding-bottom:21%;
+	 background: url('../img/alt1.png') bottom no-repeat,
+     			 url('../img/alt0.jpg') no-repeat;
+     background-size: 100% auto;
+     height: 140vh;    
 }
 
 .header__contenido{
@@ -116,6 +115,7 @@ nav ul li ul li{
     background-size: 100% auto;
     background-position: center top;
     padding-bottom: 15em;
+    padding-top: 8em;
 }
 
 .fincas__nuestras__item{
@@ -214,6 +214,10 @@ nav ul li ul li{
     height: 1280px;
 }
 
+.video img{
+	width: 100%;
+}
+
 
 /*Recetas*/
 
@@ -302,4 +306,158 @@ nav ul li ul li{
 
 .recetas__item:nth-child(2):hover .recetas__item__info{
 	padding-left: 3.5em;
+}
+
+
+
+
+/*MediaQueries*/
+
+@media screen and (max-width:1600px) {
+	.header{
+		height: 130vh;
+	}
+}
+	
+@media screen and (max-width:1440px) {
+	.header{
+		height: 155vh;
+	}
+
+	.recetas {
+	   padding: 4em 0;
+	}
+
+	.fincas {
+    	padding: 5em 0;
+	}
+}
+	
+@media screen and (max-width:1366px) {
+	.header{
+		height: 130vh;
+	}
+	
+	.recetas {
+	   padding: 0em 0;
+	}
+
+	.recetas h3{
+		margin-top: 1em;
+	}
+
+	.fincas {
+    	padding-bottom: 8em;
+	}
+
+}
+
+
+@media screen and (max-width:1280px) {
+
+	.recetas {
+	   padding: 1em 0;
+	   background-size: cover;
+	}
+
+}
+
+
+@media screen and (max-width:1279px) {
+	
+	nav ul{
+   		margin-left: -3em;
+	}
+
+	nav ul li {
+    	margin-right: 1em;
+	}
+
+	.header__contenido {
+    	padding: 6em 0;
+	}
+
+	.header__contenido img {
+	    width: 20%;
+	}
+
+	.header__contenido__parrafo p {
+    	font-size: 1.2em;
+	}
+
+	.fincas__nuestras__item {
+    	padding-bottom: 3.5em;
+	}
+
+	.fincas__nuestras__item h4 {
+    	font-size: 2em;
+    }
+
+    .nuestras {
+    	padding: 4.41em 0;
+	}
+
+	.nuestras h3 {
+    	padding: 0 1em;
+    }
+	
+	.recetas__item p {
+    	font-size: 1.3em;
+	}
+	
+
+}
+
+
+@media screen and (max-width:800px) {
+	.header {
+	    height: 70vh;
+	}
+
+	.header__contenido {
+    	padding: 3em 0;
+	}
+
+	.header__contenido img {
+	    width: 25%;
+	}
+
+	.header__contenido__parrafo p{
+		font-size: 1em;
+   		padding: 0 2.5em;
+	}
+
+	.header__contenido__parrafo p:last-child{
+		font-size: 1em;
+   		padding: 0 2em;
+	}
+
+	.fincas {
+	    background-repeat: repeat-y;
+	}
+
+	.recetas__item{
+		text-align: center;
+	}
+
+	.recetas__item__info{
+		padding: 1em 0 2em 0;
+		text-align: center;
+	}
+	
+	.recetas__item:hover .recetas__item__info{
+		padding-left: 0em;
+	}
+
+	.recetas__item:nth-child(2):hover .recetas__item__info{
+		padding-left: 0em;
+	}
+	
+	.recetas__item p {
+    	font-size: 1.3em;
+    	text-align: center;
+    	padding: 1em 2em;
+	}
+
+
 }
