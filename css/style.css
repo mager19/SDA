@@ -408,7 +408,6 @@ nav ul li ul li{
 
 }
 
-
 @media screen and (max-width:800px) {
 	.header {
 	    height: 70vh;
@@ -458,6 +457,126 @@ nav ul li ul li{
     	text-align: center;
     	padding: 1em 2em;
 	}
+	
+	.navbar-toggle .icon-bar {
+    	background: #004795;
+	}
+	
+	.menu__movil{
+    	margin-bottom: 0px!important;
+    	padding: 0em!important;
+    	text-align: center;
+    }
 
+	.video iframe {
+	    width: 100%;
+    	height: 500px;
+	}
+
+}
+
+@media screen and (max-width:480px) {
+	.header{
+	 background: url('../img/alt1.png') bottom no-repeat,
+     			 url('../img/alt0.jpg') repeat-y;
+     background-size: 100% auto;
+     height: 60vh;    
+	}
+
+    .header__contenido {
+    	padding: 1em 0;
+	}
+	
+	.header__contenido img {
+    	width: 40%;
+	}
+
+	.header__contenido__parrafo p:first-child {
+    	display: none;
+	}
+
+	.header__contenido__parrafo {
+	    background-size: cover;
+	    padding: 0.5em 0;
+	    margin-top: 1em;
+	    height: 130px;
+	}
+
+	.header__contenido__parrafo p:last-child {
+    	font-size: 0.9em;
+    	padding: 0 0em;
+	}
+
+	.nuestras{
+		padding: 2em 0;
+	}
+
+	.nuestras h3{
+		font-size: 2.2em;
+	}
+
+	.fincas__nuestras__item {
+    	padding-bottom: 0.5em;
+    	text-align: center;
+	}
+
+	.fincas__nuestras__item {
+	    padding-top: 1em;
+	    padding-left: 0em;
+	    text-align: center;
+	}
+
+	.fincas__nuestras__item h4 {
+    	font-size: 2em;
+	    padding-right: 0em;
+    	margin-top: 3em;
+    }
+
+    .recetas h3 {
+    	background-size: 130% auto;
+    	font-size: 3em;
+   	}
+
+   	.recetas__item h4 {
+    	font-size: 2em;
+    	margin-top: 0.5em;
+	}
+
+	.recetas__item p {
+	    font-size: 1.1em;
+	    text-align: center;
+	    padding: 0em 2em;
+	}
+
+	.recetas__item:nth-child(2) .recetas__item__info {
+    	padding-left: 0em;
+	}
+	
+	.fincas {
+    	padding: 3em 0;
+	}
+
+}
+
+@media screen and (max-width:380px) {
+	.header{
+	 background: url('../img/alt1.png') bottom no-repeat,
+     			 url('../img/alt0.jpg') repeat-y;
+     background-size: 100% auto;
+     height: 75vh;    
+	}
+
+	.header__contenido__parrafo p:last-child {
+    	font-size: 1em;
+    	padding: 0.1em 0em;
+    	padding-bottom: 1em;
+	}
+
+	.header__contenido__parrafo {
+	    background-size: cover;
+	    padding: 0.5em 0;
+	    margin-top: 1em;
+	    height: 160px;
+	}
 
 }
